@@ -1,13 +1,23 @@
+# Virtual environments
+venv/
 .venv/
+ENV/
+env/
+
+# Python cache
 __pycache__/
-*.pyc
-.DS_Store
-.venv/
-data/cache/
-data/*.npz
-*.log
-.server.pid
-__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables & secrets
 .env
-.pytest_cache/
-server.err.log
+.env.local
+
+# Local databases and cache data
+*.db
+data/cache/
+data/*.duckdb
+
+# OS files
+.DS_Store
+Thumbs.db
